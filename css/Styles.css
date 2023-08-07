@@ -1,0 +1,3311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+/*MENÚ*/
+
+.navbar li{
+  list-style: none;
+}
+.actionBtnA{
+  text-decoration: none;
+  color: #000;
+  font-size: 21px;
+}
+.links a{
+  text-decoration: none;
+  color: #000;
+  font-size: 21px;
+}
+
+.links a:hover{
+  color: #C5353B;
+}
+
+.header{
+  position: relative;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.logo img{
+  width: 65px;
+}
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggleBtn{
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.actionBtn{
+  background-color:#0f1e87;
+  color:#c8c8c5;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.actionBtn:hover{
+  background-color:#C5353B;
+  color: #000;
+}
+
+
+
+.actionBtn:active{
+  scale: 0.95;
+}
+
+.dropdownMenu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdownMenu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdownMenu .actionBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdownMenu.open{
+  height: 240px;
+}
+
+/*OBJETIVO*/
+
+.obj{
+  display: flex;
+  grid-template-columns: 30% 70%;
+  background-color: #efefee;
+  padding-bottom: 7%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.obj img{
+  width: 1500px;
+  height: auto;
+}
+
+.obj h1{
+  color: #C5353B;
+  margin-bottom: 15px;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.obj p{
+  font-size: 19px;
+  color: black;
+  text-align: left;
+  font-weight: 500;
+}
+
+.objTxt{
+  margin-left: 5%;
+}
+
+.obj a{
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+
+}
+
+.obj i{
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+
+/*ALIADOS*/
+
+.aliados{
+  display: block;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #d4e0f4 ;
+  text-align: center;
+}
+
+.aliadosPfp{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+  align-items: center;
+}
+
+.aliadosPfp h2{
+  font-size: 19px;
+  color: black;
+  font-weight: 500;
+}
+
+.aliadosPfp img{
+  width: 160px;
+  height: auto;
+}
+
+/*PORTAFOLIO*/
+
+.portafoliogen{
+  margin-top: 8%;
+}
+
+.portafoliogen h4{
+  margin-top: 5%;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.portafolio_u{
+  display: flex;
+  flex-direction: row;
+}
+
+.portafolio_u div{
+  margin: 5%;
+  border-radius: 30% 10% 10% 6% / 37% 10% 10% 11%  ;
+}
+
+.portafolio_u img{
+  width: 230px;
+  height: auto;
+  margin-right: 12%;
+}
+
+.aseso{
+  display: grid;
+  grid-template-columns: 32% 68%;
+  align-items: center;
+  justify-items: center;
+  background-color: #c8c8c5;
+}
+
+.infopor{
+  padding-left: 6%;
+}
+
+.consul{
+  display: grid;
+  grid-template-columns: 32% 68%;
+  background-color: #c8c8c5;
+  align-items: center;
+  justify-items: center;
+}
+
+.portafolio_u h3{
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+
+.portafolio_u p{
+  font-size:20px;
+  text-align: left;
+}
+
+.portafolio_u a{
+  font-size: 20px;
+  font-weight:bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.portafolio_u i{
+  margin-top: 8%;
+  margin-left: 2%;
+}
+
+.portafolio_u a:hover{
+  transition: 0.4s;
+  background-color: #C5353B;
+  color: #FFFFFF;
+}
+
+/*PROYECTOS CUMPLIDOS*/
+
+.proyectos{
+  background-color: #fff;
+  padding-top: 3%;
+}
+
+.proyectos h2{
+  color: black;
+  text-align: left;
+  font-size: 65px;
+  margin-left: 4%;
+  font-style: italic;
+
+}
+
+.proyectos h3{
+  color: black;
+  font-size: 20px;
+  margin-left: 4%;
+  font-weight: 500;
+
+}
+
+.pdivs{
+  display: block;
+  align-items: center;
+  justify-items: center;
+  display: none;
+}
+
+.pdivs img{
+  width: 350px;
+  margin: 3%;
+}
+
+.pdivs1{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.pdivs1 img{
+  margin: 3%;
+  width: 350px;
+}
+
+.pdivs2{
+  display: flex;
+  flex-direction: column;
+  margin: 4%;
+}
+
+.pdivs2 h1{
+  margin-bottom: 4%;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.pdivs2 p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.proyectosC{
+  background-color: #d4e0f4;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-bottom: 50px solid #0f1e87;
+  box-shadow: -8px -6px 6px 0px rgba(0,0,0,0.21);
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.botones button{
+  margin: 1em;
+  padding-left:3%;
+  padding-right:3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 15px;
+  background-color: #ccd4ec;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: black;
+  font-weight:600;
+}
+
+.botones button:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.popUp{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 88%;
+  max-width: 1600px;
+  height: 98vh;
+  max-height: 880px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  overflow: hidden;
+  transition: 1s;
+  opacity: 0;
+}
+
+.popUp.active{
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.popUp.active .large-image{
+  opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 1s;
+}
+
+.popUp.active .index{
+  opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 1s;
+}
+
+.popUp.active .close-btn{
+  opacity: 1;
+  transition: opacity .5s;
+  transition-delay: 1s;
+}
+
+.popUp.active .image-name{
+  opacity: 1;
+  transition: opacity .5s;
+  transition-delay: 1s;
+}
+
+.top-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-weight:  400;
+}
+
+.image-name{
+  opacity: 0;
+}
+
+.close-btn{
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #C5353B;
+  cursor: pointer;
+}
+
+.index{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 80px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+}
+
+.large-image{
+  margin-top: 5%;
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+  opacity: 0;
+}
+
+
+/*NOSOTROS*/
+
+.wavExp > svg {
+  display: block;
+  }
+
+.wavExp {
+  background: #EEE;
+}
+
+.wavExp {
+  position: relative;
+  background: #efefee;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenido{ 
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  padding: 3%;
+  background-color: #eeeeee;
+}
+
+.imgnosotros{
+  height: auto;
+  width: 700px;
+}   
+
+.escrito{
+  text-align: center;
+}
+
+.escrito h1{
+  font-size: 70px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  color: #C5353B;
+
+}
+
+.escrito p{
+  font-size: 20px;
+  font-weight:500;
+  text-align: left;
+}
+
+.escrito h4{
+  text-align: left;
+  margin-bottom: 2%;
+  font-size: 20px;
+
+}
+
+.contacto{
+  font-weight: 700;
+  margin-top: 3%;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 2% ;
+  padding-bottom: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-right: 73%;
+  border-radius: 20px;
+  background: #0f1e87;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*EXPERIENCIAS*/
+
+
+.experiencias {
+  max-width: 100%;
+  padding: 1rem;
+  display: grid;
+  background: #fff;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  justify-items: center;
+  padding-bottom: 8%;
+}
+
+.expIzq{
+  margin-left: 3%;
+}
+
+.expIzq h1 {
+  color: black;
+  margin-bottom: 2rem;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.expIzq p {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  font-weight: 500;
+}
+
+.expDer {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  width: 600px;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 90px;
+  border-radius: 100%;
+}
+
+.cardCon {
+  display: flex;
+  gap: 1rem;
+}
+
+.cardCon span i {
+  font-size: 2rem;
+}
+
+.cardDett p {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.cardDett h4 {
+  text-align: left;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.expDer a{
+  font-size: 17px;
+  font-weight:bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.expDer i{
+  margin-left: 2%;
+}
+
+.expDer a:hover{
+  transition: 0.4s;
+  background-color: #C5353B;
+  color: #FFFFFF;
+}
+
+#fondoVentanaModal{
+  background-color: black;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  z-index: 1000;
+}
+
+
+
+.modalCommis{
+  margin:0 15vw;
+  position: fixed;
+  top:-200vh;
+  background-color:#efefee;
+  width: 70vw;
+  height: 70vh;
+  z-index: 1100 ;
+  border-radius: 20px;
+  text-align: center;
+  border: 5px solid  black ;
+
+}
+.modalCommis video{
+width: 100%;
+
+}
+
+.showFondo{
+  top: 0vh !important;
+}
+
+.showModalCommis{
+  top:10vh;
+}
+
+.fa-circle-xmark{
+  position: relative;
+  margin: 2% 2% 2% 0;
+  left: 42%;
+  font-size: 150%;
+  color:red;
+  background: white;
+  border-radius: 50%;
+}
+
+
+
+/*FOOTER*/
+
+.foot{
+  padding: 3%;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  display: grid;
+  color: #c4c4c4;
+  grid-template-columns: 33% 33% 33%;
+  background-color: #0f1e87 ;
+}
+
+.foots{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.foots h4{
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.foots p{
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+.logoRed{
+  display: flex;
+  flex-direction: column;
+}
+
+.logoUU img{
+  width: 200px;
+}
+
+.RedesFoot{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #c4c4c4;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footerUl{
+  display: flex;
+  flex-direction: row;
+}
+
+.icons{
+  margin: 3%;
+}
+
+.copy{
+  background-color: #0f1e87;
+
+  padding-top: 1%;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/*ASESORIAS*/
+
+.consultorias{
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  align-items: center;
+  justify-items: center;
+}
+
+.consultorias img{
+  width: 700px;
+  height: auto;
+}
+
+.consultorias h1{
+  text-align: left;
+  
+}
+
+.consultoriasD{
+  margin-left: 2%;
+}
+
+.consultorias p{
+  margin-top: 2%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.Tpt1{
+  font-size: 58px;
+  text-align: center;
+}
+
+
+
+.consultorias h4{
+  text-align: center;
+  margin-top: 3%;
+  font-weight: 500;
+}
+
+.botonA{
+  margin-top: 1%;
+  margin-left: 43%;
+  border-radius: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  border-style: none;
+  background: #C5353B;
+}
+
+
+.Tpt3{
+   font-size: 60px;
+  margin-bottom: 3%;
+  width: 1100px;
+  text-align: center;
+}
+
+.slider_container{
+  max-width: 1000px;
+  margin-top: 100px;
+  margin-left: 12%;
+
+
+  width: 1200px;
+  height: 400px;
+}
+
+.slider_container2{
+margin-left: 130px;
+  width: 50vw;
+  height: 50vh;
+
+}
+
+.slider_container .slider{
+  white-space: nowrap;
+  overflow: hidden;
+
+ 
+}
+
+.slider{
+  margin-left: 4%;
+
+  width: 100%;
+}
+
+
+
+.slider_container2 .slider2{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%; 
+}
+
+.slider div{
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin-left: 39px;
+  height: 120px;
+  border: 2px solid white;
+  width: 300.3px;
+  cursor: pointer;
+  padding-top:5%; 
+  backdrop-filter: blur(600px); 
+}
+
+.slider2 div{
+  display:inline-block;
+  margin-left: 39px;
+
+  width: 100%;
+  cursor: pointer;
+ 
+  
+}
+
+.slider2 div:first-child{
+  margin-left: 0px;
+}
+
+.slider div:first-child{
+  margin-left: 0px;
+}
+
+.slider_container i{
+  position: absolute;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 46px;
+  background-color: blue;
+  color: #FFFFFF;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 3%;
+
+ 
+}
+.slider_container2 i{
+  position: absolute;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 46px;
+  background-color: blue;
+  color: #FFFFFF;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 5%;
+  
+
+}
+
+.slider_container2 i:first-child{
+  left: 100px;
+  transform: translateY(300%);
+}
+
+.slider_container2 i:last-child{
+  right: 150px;
+  transform: translateY(-490%);
+}
+.slider_container i:last-child{
+  right: 130px;
+  transform: translateY(-315%);
+}
+
+
+
+.slider.mov{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.slider.mov img{
+  pointer-events: none;
+}
+
+.info{
+  margin-top: 50px;
+  height: 50px;
+  font-size:large;
+  text-align: center;
+  background-color: #EC7B2A;
+
+  padding-top: 20px;
+  color: white;
+} 
+
+.info1{
+  margin-top: 50px;
+  height: 50px;
+  font-size:large;
+  text-align: center;
+  background-color: #9F7B59;
+
+  padding-top: 20px;
+  color: white;
+}
+
+.info2{
+  margin-top: 50px;
+  height: 50px;
+  font-size:large;
+  text-align: center;
+  background-color: #36B0E2;
+  
+  padding-top: 20px;
+  color: white;
+
+}
+
+.info3{
+  margin-top: 50px;
+  height: 50px;
+  font-size:large;
+  text-align: center;
+  background-color: #C5353B;
+
+  padding-top: 20px;
+  color: white;
+}
+
+.info4{
+  margin-top: 50px;
+  height: 50px;
+  font-size:large;
+  text-align: center;
+  background-color: #606468;
+
+  padding-top: 20px;
+  color: white;
+}
+
+.info5{
+  margin-top: 50px;
+  height: 50px;
+  font-size:large;
+  text-align: center;
+  background-color: #354591;
+
+  padding-top: 20px;
+  color: white;
+}
+
+.fondo{
+  background-image: url(../ASSETS/imgs/image-31-3.png);
+}
+
+.fondo1{
+  background-image: url(../ASSETS/imgs/2.png);
+}
+
+.fondo2{
+  background-image: url(../ASSETS/imgs/3.png);
+}
+
+.fondo3{
+   background-image: url(../ASSETS/imgs/4.png);
+}
+.fondo4{
+   background-image: url(../ASSETS/imgs/6.png);
+}
+
+.fondo5{
+   background-image: url(../ASSETS/imgs/5.png);
+}
+
+
+.consultCarreras article{
+ height: 300px;
+
+}
+
+.consultCarreras h1{
+  padding-top: 1%;
+  font-size: 50px;
+}
+
+.consultCarreras{
+  font-size: 20px;
+}
+
+.admiEmpre{ 
+  background-color:#ec7b2a;
+  text-align: center;
+  display: none;
+}
+
+.finanComer{
+  background-color:#9F7B59;
+  text-align: center;
+  display: none;
+}
+
+.ingSoft{
+  background-color:#36B0E2;
+  text-align: center;
+  display: none;
+}
+
+.markLog{
+  background-color:#C5353B;
+  text-align: center;
+  display: none;
+}
+
+.ingIndus{
+  background-color:#606468;
+  text-align: center;
+  display: none;
+}
+
+.negocInter{
+  background-color:#354591;
+  text-align: center;
+  display: none;
+}
+
+
+
+/*RESPONSIVE*/
+ 
+  
+#burguer{
+  display: none;
+}
+
+.mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1279px){
+
+  .logo{
+    width: 69px;
+  }
+
+  .menu a{
+    font-size: 24px;
+  }
+  
+  .menu li{
+    margin-top: 1.5%;
+  }
+
+  .obj img{
+    width: 590px;
+  }
+
+  .obj h1{
+    font-size: 65px;
+  }
+
+  .obj p{
+    font-size: 19px;
+  }
+
+  .obj a{
+    font-size: 19px;
+  }
+
+  .aliadosPfp img{
+    width: 170px;
+  }
+
+  .portafoliogen h4{
+    font-size: 56px;
+  }
+
+  .portafolio_u div{
+    border-radius: 25px;
+  }
+  
+  .portafolio_u img{
+    width: 190px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 36px;
+  }
+  
+  .portafolio_u p{
+    font-size: 19px;
+  }
+
+  .portafolio_u a{
+    font-size: 19px;
+  }
+  
+  .portafolio_u i{
+    margin-top: 5%;
+  }
+
+  .proyectos h2{
+    font-size: 60px;
+  }
+
+  .proyectos h3{
+    font-size: 20px;
+  }
+
+  .pdivs1 h1{
+    font-size: 35px;
+  }
+
+  .pdivs1 p{
+    font-size: 19px;
+  }
+
+  .pdivs2 h1{
+    font-size: 35px;
+  }
+
+  .pdivs2 p{
+    font-size: 19px;
+  }
+
+  .pdivs img{
+    width: 200px;
+    margin: 2%;
+  }
+
+  .pdivs1 img{
+    width: 200px;
+    margin: 2%;
+  }
+
+  .imgnosotros{
+    width: 650px;
+  }
+
+  .escrito h1{
+    font-size: 77px;
+  }
+
+  .escrito p{
+    font-size: 19px;
+  }
+
+  .escrito h4{
+    font-size: 19px;
+  }
+
+  .contacto{
+    font-size: 16px;
+  }
+
+  .expIzq h1{
+    font-size: 60px;
+  }
+
+  .expIzq p{
+    font-size:  20px;
+  }
+
+  .card{
+    width: 560px;
+    padding: 3%;
+  }
+
+  .card img{
+    width: 65px;
+  }
+
+  .cardDett h4{
+    font-size: 22px;
+  }
+
+  .cardDett p{
+    font-size: 19px;
+    margin-top: 1%;
+  }
+
+  .foots{
+    margin: 5%;
+  }
+
+  .foots h4{
+    font-size: 28px;
+    margin-top: 3%;
+  }
+  
+  .foots p{
+    margin-top: 2%;
+    font-size: 21px;
+  }
+  
+  .RedesFoot{
+    font-size: 20px;
+  }
+  
+  .footerUl{
+    margin-left: 27%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+  
+  .consultorias img{
+    width: 690px;
+  }
+  
+  .consultorias h1{
+    font-size: 54px;
+  }
+  
+  .consultorias p{
+    font-size: 18px;
+  }
+
+  .slider_container{
+    width: 800px;
+    height: 400px;
+  
+  }
+  .slider_container2{
+    margin-left: 15%;
+  }
+  .slider_container2 i:last-child{
+    right: 100px;
+    transform: translateY(-470%);
+  }
+
+  .botonA{
+    padding: 1%;
+    font-size: 17px;
+  }
+
+  .consultorias h4{
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 1129px){
+
+  .logo{
+    width: 69px;
+  }
+
+  .menu a{
+    font-size: 24px;
+  }
+  
+  .menu li{
+    margin-top: 1.5%;
+  }
+
+  .obj img{
+    width: 590px;
+  }
+
+  .obj h1{
+    font-size: 65px;
+  }
+
+  .aliadosPfp img{
+    width: 160px;
+  }
+
+  .portafoliogen h4{
+    font-size: 54px;
+  }
+  
+  .portafolio_u img{
+    width: 190px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 36px;
+  }
+  
+  .portafolio_u p{
+    font-size: 18px;
+  }
+
+  .portafolio_u a{
+    font-size: 17px;
+  }
+
+  .proyectos h2{
+    font-size: 60px;
+  }
+
+  .proyectos h3{
+    font-size: 20px;
+  }
+
+  .pdivs1 h1{
+    font-size: 35px;
+  }
+
+  .pdivs1 p{
+    font-size: 20px;
+  }
+
+  .pdivs2 h1{
+    font-size: 35px;
+  }
+
+  .pdivs2 p{
+    font-size: 20px;
+  }
+
+  .imgnosotros{
+    width: 580px;
+  }
+
+  .escrito h1{
+    font-size: 59px;
+  
+  }
+
+  .escrito p{
+    font-size: 19px;
+  }
+
+  .escrito h4{
+    font-size: 19px;
+  }
+
+  .contacto{
+    font-size: 15px;
+  }
+
+  .expIzq h1{
+    font-size: 60px;
+  }
+
+  .expIzq p{
+    font-size:  19px;
+  }
+
+  .card{
+    width: 510px;
+    padding: 3%;
+  }
+
+  .cardDett h4{
+    font-size: 22px;
+  }
+
+  .cardDett p{
+    font-size: 17px;
+    margin-top: 1%;
+  }
+
+  .foots{
+    margin: 7%;
+  }
+
+  .foots h4{
+    font-size: 25px;
+    margin-top: 3%;
+  }
+  
+  .foots p{
+    margin-top: 2%;
+    font-size: 18px;
+  }
+  
+  .RedesFoot{
+    font-size: 20px;
+  }
+  
+  .footerUl{
+    margin-left: 30%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+  
+  .consultorias img{
+    width: 600px;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .consultorias p{
+    font-size: 16px;
+  }
+
+  .slider_container{
+    width: 800px;
+    height: 300px;
+
+    margin-left: 0;
+   
+  }
+  .slider{
+    margin-left: 18%;
+  }
+
+  .slider_container i{
+    margin-left: 10%;
+  }
+
+  .slider_container i:last-child{
+    right: 100px;
+    transform: translateY(-485%);
+  }
+
+  .slider_container i:first-child{
+    right: 100px;
+    transform: translateY(-285%);
+  }
+
+  .Tpt3{
+    font-size: 25px;
+    width: 100%;
+    margin-left: 20%
+  }
+  
+  .slider div{
+    width: 48%;
+    margin-left: 4.35%;
+  }
+
+  .slider_container2 i:last-child{
+    right: 80px;
+    transform: translateY(-310%);
+  }
+
+  .botonA{
+    padding: 1%;
+    font-size: 13px;
+  }
+
+  .consultorias h4{
+    font-size: 15px;
+  }
+
+@media screen and (max-width: 993px){
+
+  .obj img{
+    width:540px;
+  }
+
+  .obj h1{
+    font-size: 58px;
+  }
+
+  .obj p{
+    font-size: 17px;
+  }
+
+  .portafolio_u p{
+    font-size: 17px;
+  }
+
+  .portafolio_u img{
+    margin-right: 10%;
+  }
+
+  .imgnosotros{
+    width: 530px;
+  }
+
+  .escrito h1{
+    font-size: 55px;
+  }
+
+  .escrito p{
+    font-size: 16px;
+  }
+
+  .escrito h4{
+    font-size: 16px;
+  }
+
+  .contacto{
+    font-size: 14px;
+  }
+
+  .expIzq h1{
+    font-size: 57px;
+  }
+
+  .expIzq p{
+    font-size:  16px;
+  }
+
+  .card{
+    width: 440px;
+    padding: 2%;
+  }
+  .Tpt1{
+    font-size: 4px;
+    margin-left: 0;
+  }
+  .slider_container{
+    width: 700px;
+    height: 400px;
+  }
+  .slider{
+    margin-left: 20%;
+  }
+  .slider_container2{
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+  .slider_container2 i:last-child{
+    right: 70px;
+    transform: translateY(-350%);
+  }
+  .slider_container2 i:first-child{
+    left: 60px;
+    transform: translateY(250%);
+  }
+  
+  .cardDett p{
+    font-size: 15px;
+    margin-top: 1%;
+  }
+
+  .foots{
+    padding: 4%;
+  }
+  
+  .consultorias p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  
+  .logo{
+    width: 63px;
+  }
+
+  .menu a{
+    font-size: 21px;
+  }
+  
+  .obj img{
+    width: 490px;
+  }
+
+  .obj h1{
+    font-size: 50px;
+  }
+
+  .obj p{
+    font-size: 16px;
+  }
+
+  .aliadosPfp img{
+    width: 120px;
+  }
+
+  .portafoliogen h4{
+    font-size: 40px;
+  }
+
+  .portafolio_u img{
+    width: 170px;
+    margin-right: 15%;
+  }
+
+  .portafolio_u h3{
+    font-size: 32px;
+  }
+  
+  .portafolio_u p{
+    font-size: 15px;
+  }
+
+  .portafolio_u a{
+    font-size: 16px;
+  }
+  
+  .proyectos h2{
+    font-size: 53px;
+  }
+
+  .proyectos h3{
+    font-size: 16px;
+  }
+
+  .pdivs1 h1{
+    font-size: 30px;
+  }
+
+  .pdivs2 h1{
+    font-size: 30px;
+  }
+
+  .imgnosotros{
+    width: 490px;
+  }
+
+  .escrito{
+    margin-left: 3%;
+  }
+
+  .escrito h1{
+    font-size: 55px;
+  }
+
+  .escrito p{
+    font-size: 16px;
+  }
+
+  .escrito h4{
+    font-size: 15px;
+  }
+
+  .expIzq h1{
+    font-size: 58px;
+  }
+
+  .expIzq p{
+    font-size:  18px;
+  }
+
+  .card{
+    width: 415px;
+    padding: 3%;
+  }
+
+  .card img{
+    width: 65px;
+  }
+
+  .cardDett h4{
+    font-size: 20px;
+  }
+
+  .cardDett p{
+    font-size: 16px;
+    margin-top: 1%;
+  }
+
+  .foots{
+    margin: 5%;
+  }
+
+  .foots h4{
+    font-size: 24px;
+    margin-top: 3%;
+  }
+  
+  .foots p{
+    margin-top: 2%;
+    font-size: 16px;
+  }
+  
+  .RedesFoot{
+    font-size: 20px;
+  }
+  
+  .footerUl{
+    margin-left: 30%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+  
+  .consultorias img{
+    width: 600px;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .consultorias p{
+    font-size: 16px;
+  }
+
+  .slider_container{
+    width: 700px;
+    height: 400px;
+  }
+  .slider{
+    margin-left: 20%;
+  }
+  .slider_container i:last-child{
+    right: 60px;
+  }
+  .slider_container2 i:first-child{
+    left: 60px;
+    transform: translateY(200%);
+  }
+
+  .botonA{
+    padding: 1%;
+    font-size: 13px;
+  }
+
+  .consultorias h4{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 862px ){
+
+  .logo{
+    width: 50px;
+  }
+
+  .menu a{
+    font-size: 20px;
+  }
+  
+  .menu li{
+    margin-top: 1.5%;
+  }
+  
+  .obj{
+    flex-direction: column;
+  }
+
+  .obj img{
+    width: 550px;
+    margin-left: 4%;
+  }
+
+  .obj h1{
+    font-size: 50px;
+  }
+
+  .aliadosPfp img{
+    width: 100px;
+  }
+
+  .portafoliogen h4{
+    font-size: 40px;
+  }
+
+  .portafolio_u{
+    flex-direction: column;
+  }
+
+  .portafolio_u div{
+    border-radius: 25px;
+    margin: 3%;
+  }
+  
+  .portafolio_u img{
+    width: 180px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 30px;
+  }
+  
+  .portafolio_u p{
+    font-size: 16px;
+  }
+
+  .portafolio_u a{
+    font-size: 15px;
+  }
+  
+  .portafolio_u i{
+    margin-top: 5%;
+  }
+
+  .proyectos h2{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .inforpor{
+    padding-left:0;
+  }
+
+  .proyectos h3{
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .pdivs1 h1{
+    font-size: 31px;
+  }
+
+  .pdivs1 p{
+    font-size: 15px;
+  }
+
+  .pdivs2 h1{
+    font-size: 31px;
+  }
+
+  .pdivs2 p{
+    font-size: 15px;
+  }
+
+  .pdivs img{
+    width: 150px;
+    margin: 2%;
+  }
+
+  .pdivs1 img{
+    width: 150px;
+    margin: 2%;
+  }
+
+  .contenido{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgnosotros{
+    width: 510px;
+  }
+
+  .escrito h1{
+    font-size: 53px;
+    text-align: center;
+  }
+
+  .escrito p{
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .escrito h4{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .contacto{
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .experiencias{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expIzq h1{
+    font-size: 55px;
+  }
+
+  .expIzq p{
+    font-size:  17px;
+  }
+
+  .card{
+    width: 600px;
+    align-items: center;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+
+  .card img{
+    width: 80px;
+  }
+
+  .cardDett h4{
+    font-size: 20px;
+  }
+
+  .cardDett p{
+    font-size: 16px;
+    margin-top: 1%;
+  }
+
+  .foot{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .foots{
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  
+  .foots h4{
+    font-size: 24px;
+    margin-top: 3%;
+  }
+  
+  .foots p{
+    margin-top: 2%;
+    font-size: 18px;
+  }
+  
+  .RedesFoot{
+    font-size: 20px;
+  }
+  
+  .footerUl{
+    margin-left: 30%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+
+  .consultorias{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .consultorias img{
+    width: 650px;
+  }
+  
+  .consultorias h1{
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .consultorias p{
+    font-size: 20px;
+  }
+
+  .slider_container{
+    width: 600px;
+    height: 400px;
+  }
+  .slider{
+    margin-left: 23%;
+  }
+
+  .slider div{
+    width: 100%;
+    margin-left: 7%;
+  }
+  .slider_container i:last-child{
+    right: 60px;
+  }
+  .slider_container2 i:first-child{
+    left: 50px;
+    transform: translateY(140%);
+  }
+
+  .Tpt1{
+    font-size: 4px;
+    margin-left: 0;
+  }
+ 
+  .consultCarreras article{
+   height: 350px;
+  }
+  
+  .consultCarreras h1{
+    font-size: 45px;
+  }
+  
+  .consultCarreras{
+    font-size: 18px;
+    margin-top: 3%;
+  }
+
+  
+}}
+
+@media screen and (max-width: 740px){
+  .slider_container{
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .slider{
+    margin-left: 23%;
+  }
+
+  .slider div{
+    width: 100%;
+    margin-left: 10%;
+  }
+  .slider_container i:last-child{
+    right: 60px;
+  }
+  .slider_container i:last-child{
+    transform: translateY(-250%);
+  }
+  .slider_container2 i:first-child{
+    left: 40px;
+    transform: translateY(50%);
+  }
+  .slider_container2 i:last-child{
+    right: 30px;
+    transform: translateY(-300%);
+  }
+
+  .Tpt3{
+    font-size: 20px; 
+}
+}
+
+@media screen and (max-width: 695px){
+
+  .logo img{
+    width: 55px;
+  }
+  
+  .navbar .toggleBtn{
+    font-size: 10px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .navbar a{
+    font-size: 14px;
+  }
+  
+  
+  .obj img{
+    margin-top: 2%;
+    width: 500px;
+    margin-left: 10%;
+  }
+
+  .obj h1{
+    padding-top: 5%;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .obj a{
+    font-size: 12px;
+    margin-left: 33%;
+  }
+
+  .obj p{
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .aliados h1{
+    font-size: 27px;
+  }
+
+  .aliadosPfp img{
+    width: 71px;
+  }
+
+  .portafoliogen h4{
+    font-size: 35px;
+  }
+
+  .portafolio_u div{
+    border-radius: 25px;
+    margin: 3%;
+  }
+  
+  .portafolio_u img{
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 25px;
+  }
+  
+  .portafolio_u p{
+    font-size: 13px;
+  }
+
+  .proyectos h2{
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .proyectos h3{
+    font-size: 15px;
+  }
+
+  .imgnosotros{
+    width: 340px;
+  }
+
+  .escrito h1{
+    font-size: 52px;
+    text-align: center;
+  }
+
+  .escrito p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .escrito h4{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .contacto{
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .expIzq h1{
+    font-size: 47px;
+    text-align: center;
+  }
+
+  .expIzq p{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .card{
+    width: 320px;
+  }
+
+  .card img{
+    width: 28px;
+  }
+
+  .foots h4{
+    font-size: 22px;
+  }
+  
+  .foots p{
+    margin-top: 4%;
+    font-size: 15px;
+  }
+  
+  .RedesFoot{
+    font-size: 22px;
+  }
+
+  .copy{
+    font-size: 12px;
+  }
+
+  .logoUU{
+    width: 30px;
+    margin-left: 22%;
+  }
+  
+  .footerUl{
+    margin-left: 22%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+
+  .consultorias img{
+    width:380px;
+    padding-top: 5%;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+  }
+  
+  .consultorias p{
+    font-size: 15px;
+  }
+
+  .slider_container{
+    width: 200px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .slider{
+    margin-left: 40%;
+  }
+
+  .slider div{
+    width: 100%;
+    height: 50px;
+    margin-left: 20%;
+  }
+  .slider_container i:last-child{
+    right: 60px;
+  }
+  .slider_container i:last-child{
+    transform: translateY(-215%);
+  }
+  .slider_container2 i:first-child{
+    left: 10px;
+    transform: translateY(50%);
+  }
+  .slider_container2 i:last-child{
+    right: 10px;
+    transform: translateY(-200%);
+  }
+
+  .slider_container2{
+    margin-top: 50%;
+  }
+
+  .Tpt3{
+    font-size: 20px;
+    margin-left: 40%;
+    
+  }
+  .info, .info1, .info2, .info3, .info4, .info5{
+  font-size: small;
+  }
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 10px;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 576px){
+
+  .navbar .links, .navbar .actionBtn{       
+    display: none;
+  }
+
+  .navbar .toggleBtn{
+    display: block;
+  }
+
+  .dropdownMenu{
+    display: block;
+    right: 2.5rem;
+  }
+
+  .obj img{
+    margin-top: 2%;
+    width: 450px;
+  }
+
+  .obj h1{
+    padding-top: 5%;
+    font-size: 43px;
+    text-align: center;
+  }
+
+  .obj a{
+    font-size: 15px;
+    margin-left: 33%;
+  }
+
+  .obj p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .aliados h1{
+    font-size: 30px;
+  }
+
+  .aliadosPfp img{
+    width: 78px;
+  }
+
+  .portafoliogen h4{
+    font-size: 36px;
+  }
+
+  .portafolio_u div{
+    border-radius: 25px;
+    margin: 3%;
+  }
+  
+  .portafolio_u img{
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 30px;
+  }
+  
+  .portafolio_u p{
+    font-size: 15px;
+  }
+
+  .proyectos h2{
+    font-size: 65px;
+    text-align: center;
+  }
+
+  .proyectos h3{
+    padding-top: 3%;
+    font-size:18px;
+    text-align: center;
+  }
+
+  .proyectos p{
+    font-size: 5px;
+  }
+
+  .pdivs1 h1{
+    font-size: 25px;
+  }
+
+  .pdivs1 p{
+    font-size: 15px;
+  }
+
+  .pdivs2 h1{
+    font-size: 25px;
+  }
+
+  .pdivs2 p{
+    font-size: 15px;
+  }
+
+  .pdivs img{
+    width: 90px;
+    margin: 2%;
+  }
+
+  .pdivs1 img{
+    width: 80px;
+    margin: 2%;
+  }
+
+  .botones{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .botones button{
+    font-size: 14px;
+  }
+
+  .contenido{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgnosotros{
+    width: 450px;
+  }
+
+  .escrito h1{
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .escrito p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .escrito h4{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .contacto{
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .expIzq h1{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .expIzq p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .card{
+    width: 380px;
+    margin-left: 16%;
+  }
+
+  .card img{
+    width: 60px;
+  }
+
+  .cardDett h4{
+    font-size: 17px;
+  }
+
+  .cardDett p{
+    font-size: 14px;
+    margin-top: 1%;
+  }
+  
+  .foots h4{
+    font-size: 25px;
+  }
+  
+  .foots p{
+    margin-top: 4%;
+    font-size: 15px;
+  }
+  
+  .RedesFoot{
+    font-size: 22px;
+  }
+
+  .copy{
+    font-size: 12px;
+  }
+
+  .logoUU{
+    width: 30px;
+    margin-left: 22%;
+  }
+  
+  .footerUl{
+    margin-left: 22%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+
+  .consultorias img{
+    width:380px;
+    padding-top: 5%;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+  }
+  
+  .consultorias p{
+    font-size: 15px;
+  }
+
+  .slider_container{
+    width: 200px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .slider{
+    margin-left: 40%;
+  }
+
+  .slider div{
+    width: 100%;
+    height: 50px;
+    margin-left: 20%;
+  }
+  .slider_container i:last-child{
+    right: 60px;
+  }
+  .slider_container i:last-child{
+    transform: translateY(-215%);
+  }
+  .slider_container2 i:first-child{
+    left: 10px;
+    transform: translateY(50%);
+  }
+  .slider_container2 i:last-child{
+    right: 10px;
+    transform: translateY(-200%);
+  }
+
+  .slider_container2{
+    margin-top: 50%;
+  }
+
+  .Tpt3{
+    font-size: 20px;
+    margin-left: 40%;
+    
+}
+.info, .info1, .info2, .info3, .info4, .info5{
+font-size: small;
+}
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 10px;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 482px){
+
+  .obj img{
+    margin-top: 2%;
+    width: 360px;
+    margin-left: 10%;
+  }
+
+  .obj h1{
+    padding-top: 5%;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .obj a{
+    font-size: 12px;
+    margin-left: 33%;
+  }
+
+  .obj p{
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .aliados h1{
+    font-size: 27px;
+  }
+
+  .aliadosPfp img{
+    width: 71px;
+  }
+
+  .portafoliogen h4{
+    font-size: 35px;
+  }
+
+  .portafolio_u div{
+    border-radius: 25px;
+    margin: 3%;
+  }
+  
+  .portafolio_u img{
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 25px;
+  }
+  
+  .portafolio_u p{
+    font-size: 13px;
+  }
+
+  .proyectos h2{
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .proyectos h3{
+    font-size: 15px;
+  }
+
+  .imgnosotros{
+    width: 340px;
+  }
+
+  .escrito h1{
+    font-size: 52px;
+    text-align: center;
+  }
+
+  .escrito p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .escrito h4{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .contacto{
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .expIzq h1{
+    font-size: 47px;
+    text-align: center;
+  }
+
+  .expIzq p{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .card{
+    width: 320px;
+  }
+
+  .card img{
+    width: 28px;
+  }
+
+  .foots h4{
+    font-size: 22px;
+  }
+  
+  .foots p{
+    margin-top: 4%;
+    font-size: 15px;
+  }
+  
+  .RedesFoot{
+    font-size: 22px;
+  }
+
+  .copy{
+    font-size: 12px;
+  }
+
+  .logoUU{
+    width: 30px;
+    margin-left: 22%;
+  }
+  
+  .footerUl{
+    margin-left: 22%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+
+  .consultorias img{
+    width:380px;
+    padding-top: 5%;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+  }
+  
+  .consultorias p{
+    font-size: 15px;
+  }
+
+  .slider_container{
+    width: 200px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .slider{
+    margin-left: 40%;
+  }
+
+  .slider div{
+    width: 100%;
+    height: 50px;
+    margin-left: 20%;
+  }
+  .slider_container i:last-child{
+    right: 60px;
+  }
+  .slider_container i:last-child{
+    transform: translateY(-215%);
+  }
+  .slider_container2 i:first-child{
+    left: 10px;
+    transform: translateY(50%);
+  }
+  .slider_container2 i:last-child{
+    right: 10px;
+    transform: translateY(-200%);
+  }
+
+  .slider_container2{
+    margin-top: 50%;
+  }
+
+  .Tpt3{
+    font-size: 20px;
+    margin-left: 40%;
+    
+}
+.info, .info1, .info2, .info3, .info4, .info5{
+font-size: small;
+}
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 10px;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 395px){
+
+  .logo{
+    width: 45px;
+  }
+
+  .menu a{
+    font-size: 20px;
+  }
+  
+  .menu li{
+    margin-top: 1.5%;
+  }
+
+  .navbar .toggleBtn{
+    font-size: 17px;
+  }
+  
+  .obj{
+    flex-direction: column;
+  }
+
+  .obj img{
+    margin-top: 2%;
+    width: 270px;
+  }
+
+  .obj h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .obj a{
+    font-size: 15px;
+    margin-left: 28%;
+  }
+
+  .obj p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .aliados h1{
+    font-size: 10px;
+  }
+
+  .aliadosPfp img{
+    width: 40px;
+  }
+
+  .portafoliogen h4{
+    font-size: 27px;
+  }
+
+  .portafolio_u div{
+    border-radius: 25px;
+    margin: 3%;
+  }
+  
+  .portafolio_u img{
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 20px;
+  }
+  
+  .portafolio_u p{
+    font-size: 12px;
+  }
+
+  .proyectos h2{
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .inforpor{
+    padding-left:0;
+  }
+
+  .proyectos h3{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .pdivs1 h1{
+    font-size: 20px;
+  }
+
+  .pdivs1 p{
+    font-size: 12px;
+  }
+
+  .pdivs2 h1{
+    font-size: 20px;
+  }
+
+  .pdivs2 p{
+    font-size: 12px;
+  }
+
+  .pdivs img{
+    width: 80px;
+    margin: 2%;
+  }
+
+  .pdivs1 img{
+    width: 80px;
+    margin: 2%;
+  }
+
+  .botones{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botones button{
+    font-size: 12px;
+  }
+
+  .imgnosotros{
+    width: 300px;
+  }
+
+  .escrito h1{
+    font-size: 52px;
+    text-align: center;
+  }
+
+  .escrito p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .escrito h4{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .contacto{
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .expIzq h1{
+    font-size: 43px;
+    text-align: center;
+  }
+
+  .expIzq p{
+    font-size:  12px;
+    text-align: center;
+  }
+
+  .card{
+    width: 280px;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+
+  .card img{
+    width: 60px;
+  }
+
+  .cardDett h4{
+    font-size: 16px;
+  }
+
+  .cardDett p{
+    font-size: 14px;
+    margin-top: 1%;
+  }
+  
+  .foots h4{
+    font-size: 25px;
+  }
+  
+  .foots p{
+    margin-top: 4%;
+    font-size: 15px;
+  }
+  
+  .RedesFoot{
+    font-size: 17px;
+  }
+
+  .copy{
+    font-size: 11px;
+  }
+
+  .logoUU{
+    width: 30px;
+    margin-left: 22%;
+  }
+  
+  .footerUl{
+    margin-left: 22%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+
+  .consultorias img{
+    width:330px;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+  }
+  
+  .consultorias p{
+    font-size: 18px;
+  }
+
+  .slider_container{
+    width: 200px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .slider{
+    margin-left: 40%;
+  }
+
+  .slider div{
+    width: 100%;
+    height: 50px;
+    margin-left: 20%;
+  }
+  .slider_container i:last-child{
+    right: 20px;
+  }
+  .slider_container i:last-child{
+    transform: translateY(-215%);
+  }
+  .slider_container2 i:first-child{
+    left: 10px;
+    transform: translateY(20%);
+  }
+  .slider_container2 i:last-child{
+    right: 10px;
+    transform: translateY(-200%);
+  }
+
+  .slider_container2{
+    margin-top: 50%;
+  }
+
+  .Tpt3{
+    font-size: 20px;
+    margin-left: 40%;
+    
+  }
+  .info, .info1, .info2, .info3, .info4, .info5{
+  font-size: small;
+  }
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 10px;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 38%;
+    margin-top: 3%;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 280px){
+
+  .dropdownMenu{
+    width: 200px;
+  }
+  
+  .logo{
+    width: 8px;
+  }
+  
+  .obj img{
+    margin-top: 2%;
+    width: 240px;
+  }
+
+  .obj h1{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .obj a{
+    font-size: 12px;
+    margin-left: 28%;
+  }
+
+  .obj p{
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .aliados h2{
+    font-size: 15px;
+  }
+
+  .aliadosPfp img{
+    width: 30px;
+  }
+
+  .portafoliogen h4{
+    font-size: 22px;
+  }
+
+  .portafolio_u img{
+    width: 80px;
+    margin-right: 0;
+  }
+
+  .portafolio_u h3{
+    font-size: 13px;
+  }
+  
+  .portafolio_u p{
+    font-size: 7px;
+  }
+
+  .inforpor a{
+    font-size: 7px;
+  }
+
+  .proyectos h2{
+    font-size: 33px;
+    text-align: center;
+  }
+
+  .proyectos h3{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .pdivs1 h1{
+    font-size: 16px;
+  }
+
+  .pdivs1 p{
+    font-size: 9px;
+  }
+
+  .pdivs2 h1{
+    font-size: 16px;
+  }
+
+  .pdivs2 p{
+    font-size: 9px;
+  }
+
+  .botones button{
+    font-size: 9px;
+  }
+
+  .imgnosotros{
+    width: 260px;
+  }
+
+  .escrito h1{
+    font-size: 43px;
+    text-align: center;
+  }
+
+  .escrito p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .escrito h4{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .contacto{
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .expIzq h1{
+    font-size: 30px;
+  }
+
+  .expIzq p{
+    font-size:  13px;
+  }
+
+  .card{
+    width: 240px;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+
+  .card img{
+    width: 40px;
+  }
+
+  .cardDett h4{
+    font-size: 14px;
+  }
+
+  .cardDett p{
+    font-size: 12px;
+    margin-top: 1%;
+  }
+  
+  .foots h4{
+    font-size: 25px;
+  }
+  
+  .foots p{
+    margin-top: 4%;
+    font-size: 11px;
+  }
+  
+  .RedesFoot{
+    font-size: 17px;
+  }
+
+  .copy{
+    font-size: 11px;
+  }
+
+  .logoUU{
+    width: 30px;
+    margin-left: 22%;
+  }
+  
+  .footerUl{
+    margin-left: 22%;
+  }
+  
+  .icons{
+    margin: 2%;
+  }
+
+  .consultorias img{
+    width:330px;
+  }
+  
+  .consultorias h1{
+    font-size: 45px;
+  }
+  
+  .consultorias p{
+    font-size: 18px;
+  }
+
+  .slider_container{
+    width: 200px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .slider{
+    margin-left: 40%;
+  }
+
+  .slider div{
+    width: 100%;
+    height: 50px;
+    margin-left: 20%;
+  }
+  .slider_container i:last-child{
+    right: 20px;
+  }
+  .slider_container i:last-child{
+    transform: translateY(-215%);
+  }
+  .slider_container2 i:first-child{
+    left: 10px;
+    transform: translateY(20%);
+  }
+  .slider_container2 i:last-child{
+    right: 10px;
+    transform: translateY(-200%);
+  }
+
+  .slider_container2{
+    margin-top: 50%;
+  }
+
+  .Tpt3{
+    font-size: 20px;
+    margin-left: 40%;
+    
+  }
+  .info, .info1, .info2, .info3, .info4, .info5{
+  font-size: small;
+  }
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 10px;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+
+  .consultorias button{
+    padding: 3%;
+    margin-left: 38%;
+    margin-top: 3%;
+  }
+
+  .Tpt2{
+    font-size: 50px;
+    margin-left: 0;
+  }
+}
